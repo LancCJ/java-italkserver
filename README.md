@@ -18,8 +18,8 @@
     2.搭建mysql数据库，创建语句文件doc/database/italkserver.sql
     3.运行
          第一种：Tomcat
-   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_run1.png)
          第二种: Jetty
+   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_run1.png)
    ![程序运行2](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_run2.png)
          
 
