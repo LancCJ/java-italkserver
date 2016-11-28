@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="system/time.json">
+		<handleClass>com.lanccj.services.SystemServices</handleClass>
+		<handleMethod>getCurrentTime</handleMethod>
+	</action>
+	<!-- 用户登录 -->
+	<action name="user/login.json">
+		<handleClass>com.lanccj.services.UserServices</handleClass>
+		<handleMethod>login</handleMethod>
+	</action>
+</actions>

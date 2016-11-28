@@ -1,0 +1,6 @@
+jdbcUrl =jdbc:mysql://127.0.0.1/cjservices?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user =root
+password =lanccj
+driver=com.mysql.jdbc.Driver
+
+devMode = true

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ITalkServer.iml" filepath="$PROJECT_DIR$/ITalkServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ITalkWeb/ITalkWeb.iml" filepath="$PROJECT_DIR$/ITalkWeb/ITalkWeb.iml" />
+    </modules>
+  </component>
+</project>
