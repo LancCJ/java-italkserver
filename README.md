@@ -26,6 +26,13 @@
 # 更新日志
 
     2016年11月28日
-        1.项目初步环境搭建,可以运行
+        1.项目初步环境搭建,可以运行,暂时没有相应功能
+        
 
 # 项目截图
+   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web1.png)
+   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web2.png)
+   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web3.png)
+   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web4.png)
+
+
