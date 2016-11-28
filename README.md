@@ -19,8 +19,8 @@
     3.运行
          第一种：Tomcat
          第二种: Jetty
-   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_run1.png)
-   ![程序运行2](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_run2.png)
+   ![程序运行1](https://github.com/LancCJ/github-project-docs/raw/master/doc/java-italkserver/Screenshots/ScreenShot_run1.png)
+   ![程序运行2](https://github.com/LancCJ/github-project-docs/raw/master/doc/java-italkserver/Screenshots/ScreenShot_run2.png)
          
 
 # 更新日志
@@ -30,9 +30,9 @@
         
 
 # 项目截图
-   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web1.png)
-   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web2.png)
-   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web3.png)
-   ![程序运行1](https://github.com/LancCJ/java-italkserver/raw/master/doc/Screenshots/ScreenShot_web4.png)
+   ![程序运行1](https://github.com/LancCJ/github-project-docs/raw/master/doc/java-italkserver/Screenshots/ScreenShot_web1.png)
+   ![程序运行1](https://github.com/LancCJ/github-project-docs/raw/master/doc/java-italkserver/Screenshots/ScreenShot_web2.png)
+   ![程序运行1](https://github.com/LancCJ/github-project-docs/raw/master/doc/java-italkserver/Screenshots/ScreenShot_web3.png)
+   ![程序运行1](https://github.com/LancCJ/github-project-docs/raw/master/doc/java-italkserver/Screenshots/ScreenShot_web4.png)
 
 
