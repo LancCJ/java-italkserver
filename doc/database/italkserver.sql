@@ -4,7 +4,7 @@ Navicat MySQL Data Transfer
 Source Server         : 本地
 Source Server Version : 50716
 Source Host           : localhost:3306
-Source Database       : cjservices
+Source Database       : italkserver
 
 Target Server Type    : MYSQL
 Target Server Version : 50716

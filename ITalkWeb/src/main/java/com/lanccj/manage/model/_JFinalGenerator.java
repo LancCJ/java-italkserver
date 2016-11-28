@@ -1,7 +1,6 @@
 package com.lanccj.manage.model;
 
 import javax.sql.DataSource;
-
 import com.jfinal.kit.PathKit;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.generator.Generator;

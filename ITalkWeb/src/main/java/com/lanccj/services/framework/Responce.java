@@ -1,8 +1,9 @@
 package com.lanccj.services.framework;
 
+import com.lanccj.manage.model.State;
+
 import java.util.HashMap;
 import java.util.List;
-import com.lanccj.manage.model.State;
 
 public class Responce {
 	private Integer code;

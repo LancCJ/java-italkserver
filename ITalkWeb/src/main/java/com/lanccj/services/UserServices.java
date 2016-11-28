@@ -6,7 +6,6 @@ import com.alibaba.fastjson.JSON;
 import com.lanccj.manage.model.User;
 import com.lanccj.services.framework.Constant;
 import com.lanccj.services.framework.Responce;
-import com.lanccj.services.framework.ServerResult;
 import com.lanccj.services.login.LoginParams;
 import com.lanccj.services.model.LoginResponse;
 
