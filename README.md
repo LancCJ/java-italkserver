@@ -1,7 +1,8 @@
 # java-italkserver
     
-    用于react-native-italk后台服务,java语言编写 idea 开发工具
-
+   用于react-native-italk后台服务,java语言编写 idea 开发工具   
+   [react-native-italk](https://github.com/LancCJ/react-native-italk "react-native-italk")
+   
 # 项目简介
 
     主要用于项目react-native-italk该App后台服务及管理
