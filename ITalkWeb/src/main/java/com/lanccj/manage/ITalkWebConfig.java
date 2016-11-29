@@ -81,7 +81,7 @@ public class ITalkWebConfig extends JFinalConfig{
 	 * 配置处理器
 	 */
 	public void configHandler(Handlers me) {
-		me.add(new MyUrlSkipHandler("/services/*", false));//将serivecs的请求直接放过 交给接口Servlet API处理
+		me.add(new MyUrlSkipHandler("/api/*", false));//将api的请求直接放过 交给接口Servlet API处理
 		me.add(new ContextPathHandler("BASE_PATH"));
 	}
 

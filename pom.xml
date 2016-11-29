@@ -24,6 +24,8 @@
         <fastjson.version>1.2.21</fastjson.version>
         <jstl.version>1.2</jstl.version>
         <servlet-api.version>2.5</servlet-api.version>
+        <log4j.version>1.2.17</log4j.version>
+        <commons-httpclient.version>3.1</commons-httpclient.version>
     </properties>
 
     <!--集中声明依赖-->
@@ -72,6 +74,16 @@
                 <groupId>jstl</groupId>
                 <artifactId>jstl</artifactId>
                 <version>${jstl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>${commons-httpclient.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>

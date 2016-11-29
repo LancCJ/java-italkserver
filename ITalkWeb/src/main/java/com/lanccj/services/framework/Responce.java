@@ -37,4 +37,12 @@ public class Responce {
 		this.data = data;
 	}
 
+	@Override
+	public String toString() {
+		return "Responce{" +
+				"code=" + code +
+				", message='" + message + '\'' +
+				", data=" + data +
+				'}';
+	}
 }

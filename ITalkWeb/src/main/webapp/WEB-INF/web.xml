@@ -30,6 +30,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>ServicesAPIServlet</servlet-name>
-    <url-pattern>/services/*</url-pattern>
+    <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
 </web-app>

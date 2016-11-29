@@ -1,12 +1,11 @@
 package com.lanccj.services.model;
 
-import com.lanccj.services.framework.Responce;
-
-public class LoginResponse extends Responce{
+public class LoginResponse {
 
 	private String userName;
     private String reaylName;
     private String phoneNum;
+    private String token;
 
 	public String getUserName() {
         return userName;
@@ -31,5 +30,22 @@ public class LoginResponse extends Responce{
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
-	
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    @Override
+    public String toString() {
+        return "LoginResponse{" +
+                "userName='" + userName + '\'' +
+                ", reaylName='" + reaylName + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
+                ", token='" + token + '\'' +
+                '}';
+    }
 }

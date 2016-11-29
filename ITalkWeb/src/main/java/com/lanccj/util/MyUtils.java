@@ -13,18 +13,17 @@ public class MyUtils {
 	 */
 	public static String getBodyContent(HttpServletRequest request)  
 	{  
-		String str = null;
+		String str = "";
 		try {
 			BufferedReader br=request.getReader();
 			String inputLine;
-
 
 			while ((inputLine = br.readLine()) != null) {
 				str += inputLine;
 			}
 			br.close();
 		} catch (IOException e) {
-			System.out.println("IOException: " + e);
+			System.out.println("获取请求BodyContent发生异常IOException: " + e);
 		}
 		return str;
 	}
