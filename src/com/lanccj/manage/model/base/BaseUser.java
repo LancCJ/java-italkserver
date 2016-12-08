@@ -41,4 +41,12 @@ public abstract class BaseUser<M extends BaseUser<M>> extends Model<M> implement
 		return get("USER_NICK");
 	}
 
+	public void setUserPhone(java.lang.String userPhone) {
+		set("USER_PHONE", userPhone);
+	}
+
+	public java.lang.String getUserPhone() {
+		return get("USER_PHONE");
+	}
+
 }
