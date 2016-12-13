@@ -40,6 +40,7 @@ public class UserServices {
 				loginResponse.setUserName(user.getUserName());
 				loginResponse.setUserPwd(user.getUserPwd());
 				loginResponse.setUserNick(user.getUserNick());
+                loginResponse.setUserGroup(user.getUserGroup());
 				loginResponse.setToken(UUID.randomUUID().toString());
 
 				responce.setData(loginResponse);
