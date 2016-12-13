@@ -6,12 +6,12 @@ import com.alibaba.fastjson.JSON;
 import com.lanccj.manage.model.User;
 import com.lanccj.services.framework.StateCodes;
 import com.lanccj.services.framework.Responce;
-import com.lanccj.services.login.LoginParams;
-import com.lanccj.services.model.LoginResponse;
+import com.lanccj.services.param.LoginParams;
+import com.lanccj.services.response.LoginResponse;
+import com.lanccj.services.validate.Validate;
 import com.lanccj.util.MyUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-
 import java.util.UUID;
 
 /**
@@ -34,9 +34,12 @@ public class UserServices {
 			User user=User.dao.findFirst("select * from user where user_name=? and user_pwd=?",loginParams.getUserName(),loginParams.getUserPwd());
 			if(user!=null){
 				LoginResponse loginResponse=new LoginResponse();
-				loginResponse.setPhoneNum(user.getUserPhone());
+
+				loginResponse.setUserId(user.getUserId().toString());
+				loginResponse.setUserPhone(user.getUserPhone());
 				loginResponse.setUserName(user.getUserName());
-				loginResponse.setReaylName(user.getUserNick());
+				loginResponse.setUserPwd(user.getUserPwd());
+				loginResponse.setUserNick(user.getUserNick());
 				loginResponse.setToken(UUID.randomUUID().toString());
 
 				responce.setData(loginResponse);

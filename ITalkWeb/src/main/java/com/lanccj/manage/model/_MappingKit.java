@@ -16,9 +16,11 @@ import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 public class _MappingKit {
 
 	public static void mapping(ActiveRecordPlugin arp) {
+		arp.addMapping("group", "GROUP_ID", Group.class);
 		arp.addMapping("menu", "F_ModuleId", Menu.class);
 		arp.addMapping("service", "SERVICE_ID", Service.class);
 		arp.addMapping("state", "STATE_ID", State.class);
+		arp.addMapping("test", "id", Test.class);
 		arp.addMapping("user", "USER_ID", User.class);
 	}
 }

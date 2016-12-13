@@ -9,44 +9,52 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings("serial")
 public abstract class BaseUser<M extends BaseUser<M>> extends Model<M> implements IBean {
 
-	public void setUserId(Integer userId) {
+	public void setUserId(java.lang.Integer userId) {
 		set("USER_ID", userId);
 	}
 
-	public Integer getUserId() {
+	public java.lang.Integer getUserId() {
 		return get("USER_ID");
 	}
 
-	public void setUserName(String userName) {
+	public void setUserName(java.lang.String userName) {
 		set("USER_NAME", userName);
 	}
 
-	public String getUserName() {
+	public java.lang.String getUserName() {
 		return get("USER_NAME");
 	}
 
-	public void setUserPwd(String userPwd) {
+	public void setUserPwd(java.lang.String userPwd) {
 		set("USER_PWD", userPwd);
 	}
 
-	public String getUserPwd() {
+	public java.lang.String getUserPwd() {
 		return get("USER_PWD");
 	}
 
-	public void setUserNick(String userNick) {
+	public void setUserNick(java.lang.String userNick) {
 		set("USER_NICK", userNick);
 	}
 
-	public String getUserNick() {
+	public java.lang.String getUserNick() {
 		return get("USER_NICK");
 	}
 
-	public void setUserPhone(String userPhone) {
+	public void setUserPhone(java.lang.String userPhone) {
 		set("USER_PHONE", userPhone);
 	}
 
-	public String getUserPhone() {
+	public java.lang.String getUserPhone() {
 		return get("USER_PHONE");
+	}
+
+	public void setUserGroup(java.lang.String userGroup) {
+		set("USER_GROUP", userGroup);
+	}
+
+	public java.lang.String getUserGroup() {
+		return get("USER_GROUP");
 	}
 
 }

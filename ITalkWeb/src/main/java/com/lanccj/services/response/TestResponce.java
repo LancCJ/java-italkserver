@@ -1,4 +1,4 @@
-package com.lanccj.services.model;
+package com.lanccj.services.response;
 
 import com.lanccj.services.framework.Responce;
 

@@ -9,51 +9,51 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings("serial")
 public abstract class BaseService<M extends BaseService<M>> extends Model<M> implements IBean {
 
-	public void setServiceId(Integer serviceId) {
+	public void setServiceId(java.lang.Integer serviceId) {
 		set("SERVICE_ID", serviceId);
 	}
 
-	public Integer getServiceId() {
+	public java.lang.Integer getServiceId() {
 		return get("SERVICE_ID");
 	}
 
-	public void setServiceName(String serviceName) {
+	public void setServiceName(java.lang.String serviceName) {
 		set("SERVICE_NAME", serviceName);
 	}
 
-	public String getServiceName() {
+	public java.lang.String getServiceName() {
 		return get("SERVICE_NAME");
 	}
 
-	public void setServiceClass(String serviceClass) {
+	public void setServiceClass(java.lang.String serviceClass) {
 		set("SERVICE_CLASS", serviceClass);
 	}
 
-	public String getServiceClass() {
+	public java.lang.String getServiceClass() {
 		return get("SERVICE_CLASS");
 	}
 
-	public void setServiceMethod(String serviceMethod) {
+	public void setServiceMethod(java.lang.String serviceMethod) {
 		set("SERVICE_METHOD", serviceMethod);
 	}
 
-	public String getServiceMethod() {
+	public java.lang.String getServiceMethod() {
 		return get("SERVICE_METHOD");
 	}
 
-	public void setServiceDesc(String serviceDesc) {
+	public void setServiceDesc(java.lang.String serviceDesc) {
 		set("SERVICE_DESC", serviceDesc);
 	}
 
-	public String getServiceDesc() {
+	public java.lang.String getServiceDesc() {
 		return get("SERVICE_DESC");
 	}
 
-	public void setServiceUrl(String serviceUrl) {
+	public void setServiceUrl(java.lang.String serviceUrl) {
 		set("SERVICE_URL", serviceUrl);
 	}
 
-	public String getServiceUrl() {
+	public java.lang.String getServiceUrl() {
 		return get("SERVICE_URL");
 	}
 
@@ -65,11 +65,11 @@ public abstract class BaseService<M extends BaseService<M>> extends Model<M> imp
 		return get("SERVICE_CREATE_TIME");
 	}
 
-	public void setServiceCreater(String serviceCreater) {
+	public void setServiceCreater(java.lang.String serviceCreater) {
 		set("SERVICE_CREATER", serviceCreater);
 	}
 
-	public String getServiceCreater() {
+	public java.lang.String getServiceCreater() {
 		return get("SERVICE_CREATER");
 	}
 
@@ -81,11 +81,11 @@ public abstract class BaseService<M extends BaseService<M>> extends Model<M> imp
 		return get("SERVICE_APPROVAL_TIME");
 	}
 
-	public void setServiceApprover(String serviceApprover) {
+	public void setServiceApprover(java.lang.String serviceApprover) {
 		set("SERVICE_APPROVER", serviceApprover);
 	}
 
-	public String getServiceApprover() {
+	public java.lang.String getServiceApprover() {
 		return get("SERVICE_APPROVER");
 	}
 

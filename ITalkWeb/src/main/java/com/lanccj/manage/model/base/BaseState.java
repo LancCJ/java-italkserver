@@ -9,19 +9,19 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings("serial")
 public abstract class BaseState<M extends BaseState<M>> extends Model<M> implements IBean {
 
-	public void setStateId(Integer stateId) {
+	public void setStateId(java.lang.Integer stateId) {
 		set("STATE_ID", stateId);
 	}
 
-	public Integer getStateId() {
+	public java.lang.Integer getStateId() {
 		return get("STATE_ID");
 	}
 
-	public void setStateMsg(String stateMsg) {
+	public void setStateMsg(java.lang.String stateMsg) {
 		set("STATE_MSG", stateMsg);
 	}
 
-	public String getStateMsg() {
+	public java.lang.String getStateMsg() {
 		return get("STATE_MSG");
 	}
 

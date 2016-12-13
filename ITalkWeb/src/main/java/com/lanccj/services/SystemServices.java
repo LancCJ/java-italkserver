@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.lanccj.services.framework.Responce;
-import com.lanccj.services.model.TestResponce;
+import com.lanccj.services.response.TestResponce;
 
 public class SystemServices {
 	public Responce getCurrentTime(HttpServletRequest request, HttpServletResponse response){

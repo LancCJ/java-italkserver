@@ -1,22 +1,44 @@
 /*
-Navicat MySQL Data Transfer
+ Navicat MySQL Data Transfer
 
-Source Server         : 本地
-Source Server Version : 50716
-Source Host           : localhost:3306
-Source Database       : italkserver
+ Source Server         : italkserver
+ Source Server Type    : MySQL
+ Source Server Version : 50716
+ Source Host           : localhost
+ Source Database       : italkserver
 
-Target Server Type    : MYSQL
-Target Server Version : 50716
-File Encoding         : 65001
+ Target Server Type    : MySQL
+ Target Server Version : 50716
+ File Encoding         : utf-8
 
-Date: 2016-10-31 15:54:53
+ Date: 12/13/2016 12:58:50 PM
 */
 
-SET FOREIGN_KEY_CHECKS=0;
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for menu
+--  Table structure for `group`
+-- ----------------------------
+DROP TABLE IF EXISTS `group`;
+CREATE TABLE `group` (
+  `GROUP_ID` int(11) NOT NULL,
+  `GROUP_NAME` varchar(45) DEFAULT NULL,
+  `GROUP_PARENT` int(11) DEFAULT NULL,
+  `GROUP_CREATER` varchar(45) DEFAULT NULL,
+  `GROUP_CREATE_TIME` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`GROUP_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records of `group`
+-- ----------------------------
+BEGIN;
+INSERT INTO `group` VALUES ('1', '测试组1', '0', 'lanccj', null), ('2', '测试组2', '0', 'lanccj', null), ('3', '测试组3', '0', 'lanccj', null), ('4', '测试组4', '0', 'lanccj', null), ('5', '测试组5', '4', 'lanccj', null);
+COMMIT;
+
+-- ----------------------------
+--  Table structure for `menu`
 -- ----------------------------
 DROP TABLE IF EXISTS `menu`;
 CREATE TABLE `menu` (
@@ -42,15 +64,12 @@ CREATE TABLE `menu` (
   `F_ModifyDate` datetime DEFAULT NULL,
   `F_ModifyUserId` int(11) DEFAULT NULL,
   `F_ModifyUserName` varchar(255) DEFAULT NULL,
+  `F_Test` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`F_ModuleId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of menu
--- ----------------------------
-
--- ----------------------------
--- Table structure for service
+--  Table structure for `service`
 -- ----------------------------
 DROP TABLE IF EXISTS `service`;
 CREATE TABLE `service` (
@@ -68,13 +87,14 @@ CREATE TABLE `service` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of service
+--  Records of `service`
 -- ----------------------------
-INSERT INTO `service` VALUES ('1', 'system/time.json', 'com.lanccj.services.SystemServices', 'getCurrentTime', '获取接口系统时间，用于时间同步', '/services/getCurrentTime', '2016-10-18 10:24:13', 'LancCJ', '2016-10-18 10:24:23', 'LancCJ');
-INSERT INTO `service` VALUES ('2', 'user/login.json', 'com.lanccj.services.UserServices', 'login', 'APP用户登录', '/services/user/login.json', '2016-10-31 13:33:36', 'LancCJ', '2016-10-31 13:33:54', 'LancCJ');
+BEGIN;
+INSERT INTO `service` VALUES ('1', 'system/time.json', 'com.lanccj.services.SystemServices', 'getCurrentTime', '获取接口系统时间，用于时间同步', '/services/getCurrentTime', '2016-10-18 10:24:13', 'LancCJ', '2016-10-18 10:24:23', 'LancCJ'), ('2', 'user/login.json', 'com.lanccj.services.UserServices', 'login', 'APP用户登录', '/services/user/login.json', '2016-10-31 13:33:36', 'LancCJ', '2016-10-31 13:33:54', 'LancCJ');
+COMMIT;
 
 -- ----------------------------
--- Table structure for state
+--  Table structure for `state`
 -- ----------------------------
 DROP TABLE IF EXISTS `state`;
 CREATE TABLE `state` (
@@ -84,17 +104,23 @@ CREATE TABLE `state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of state
+--  Records of `state`
 -- ----------------------------
-INSERT INTO `state` VALUES ('-1', '服务器内部错误');
-INSERT INTO `state` VALUES ('1', '返回成功');
-INSERT INTO `state` VALUES ('2', '响应失败');
-INSERT INTO `state` VALUES ('3', '用户登录成功');
-INSERT INTO `state` VALUES ('4', '该用户不存在');
-INSERT INTO `state` VALUES ('5', '登录用户信息错误');
+BEGIN;
+INSERT INTO `state` VALUES ('-1', '服务器内部错误'), ('0', '返回成功'), ('1', '响应失败'), ('103', '请求参数不正确请核对API文档'), ('104', '缺少用户名'), ('105', '缺少登录密码'), ('106', '用户密码不匹配');
+COMMIT;
 
 -- ----------------------------
--- Table structure for user
+--  Table structure for `test`
+-- ----------------------------
+DROP TABLE IF EXISTS `test`;
+CREATE TABLE `test` (
+  `id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Table structure for `user`
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -102,10 +128,16 @@ CREATE TABLE `user` (
   `USER_NAME` varchar(255) DEFAULT NULL,
   `USER_PWD` varchar(255) DEFAULT NULL,
   `USER_NICK` varchar(255) DEFAULT NULL,
+  `USER_PHONE` varchar(45) DEFAULT NULL,
+  `USER_GROUP` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`USER_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of user
+--  Records of `user`
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'lanccj', '123456', 'LancCJ');
+BEGIN;
+INSERT INTO `user` VALUES ('1', 'lanccj', '123456', 'LancCJ', '18251101581', '1'), ('2', 'test1', '123456', '测试1', '12345678901', '2'), ('3', 'test2', '123456', '测试2', '12345678902', '3'), ('4', 'test3', '123456', '测试3', '12345678903', '4'), ('5', 'test4', '123456', '测试4', '12345678904', '5');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;

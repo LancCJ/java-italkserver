@@ -39,10 +39,10 @@ public class Responce {
 
 	@Override
 	public String toString() {
-		return "Responce{" +
+		return "{" +
 				"code=" + code +
 				", message='" + message + '\'' +
-				", data=" + data +
+				", data=" + data.toString() +
 				'}';
 	}
 }

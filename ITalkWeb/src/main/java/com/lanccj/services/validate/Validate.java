@@ -1,10 +1,10 @@
-package com.lanccj.services;
+package com.lanccj.services.validate;
 
 import org.apache.commons.lang.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.lanccj.services.framework.StateCodes;
 import com.lanccj.services.framework.Responce;
-import com.lanccj.services.login.LoginParams;
+import com.lanccj.services.param.LoginParams;
 
 public class Validate {
 	/**

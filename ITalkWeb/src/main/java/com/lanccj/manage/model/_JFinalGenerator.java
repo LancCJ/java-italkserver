@@ -24,7 +24,7 @@ public class _JFinalGenerator {
 		// base model 所使用的包名
 		String baseModelPackageName = "com.lanccj.manage.model.base";
 		// base model 文件保存路径
-		String baseModelOutputDir = PathKit.getWebRootPath() + "/../src/com/lanccj/manage/model/base";
+		String baseModelOutputDir = PathKit.getWebRootPath() + "/../ITalkWeb/src/main/java/com/lanccj/manage/model/base";
 		
 		// model 所使用的包名 (MappingKit 默认使用的包名)
 		String modelPackageName = "com.lanccj.manage.model";

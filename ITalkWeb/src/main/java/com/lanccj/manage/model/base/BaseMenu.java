@@ -9,131 +9,131 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings("serial")
 public abstract class BaseMenu<M extends BaseMenu<M>> extends Model<M> implements IBean {
 
-	public void setFModuleid(Integer fModuleid) {
+	public void setFModuleid(java.lang.Integer fModuleid) {
 		set("F_ModuleId", fModuleid);
 	}
 
-	public Integer getFModuleid() {
+	public java.lang.Integer getFModuleid() {
 		return get("F_ModuleId");
 	}
 
-	public void setFParentid(Integer fParentid) {
+	public void setFParentid(java.lang.Integer fParentid) {
 		set("F_ParentId", fParentid);
 	}
 
-	public Integer getFParentid() {
+	public java.lang.Integer getFParentid() {
 		return get("F_ParentId");
 	}
 
-	public void setFEncode(String fEncode) {
+	public void setFEncode(java.lang.String fEncode) {
 		set("F_EnCode", fEncode);
 	}
 
-	public String getFEncode() {
+	public java.lang.String getFEncode() {
 		return get("F_EnCode");
 	}
 
-	public void setFFullname(String fFullname) {
+	public void setFFullname(java.lang.String fFullname) {
 		set("F_FullName", fFullname);
 	}
 
-	public String getFFullname() {
+	public java.lang.String getFFullname() {
 		return get("F_FullName");
 	}
 
-	public void setFIcon(String fIcon) {
+	public void setFIcon(java.lang.String fIcon) {
 		set("F_Icon", fIcon);
 	}
 
-	public String getFIcon() {
+	public java.lang.String getFIcon() {
 		return get("F_Icon");
 	}
 
-	public void setFUrladdress(String fUrladdress) {
+	public void setFUrladdress(java.lang.String fUrladdress) {
 		set("F_UrlAddress", fUrladdress);
 	}
 
-	public String getFUrladdress() {
+	public java.lang.String getFUrladdress() {
 		return get("F_UrlAddress");
 	}
 
-	public void setFTarget(String fTarget) {
+	public void setFTarget(java.lang.String fTarget) {
 		set("F_Target", fTarget);
 	}
 
-	public String getFTarget() {
+	public java.lang.String getFTarget() {
 		return get("F_Target");
 	}
 
-	public void setFIsmenu(String fIsmenu) {
+	public void setFIsmenu(java.lang.String fIsmenu) {
 		set("F_IsMenu", fIsmenu);
 	}
 
-	public String getFIsmenu() {
+	public java.lang.String getFIsmenu() {
 		return get("F_IsMenu");
 	}
 
-	public void setFAllowexpand(String fAllowexpand) {
+	public void setFAllowexpand(java.lang.String fAllowexpand) {
 		set("F_AllowExpand", fAllowexpand);
 	}
 
-	public String getFAllowexpand() {
+	public java.lang.String getFAllowexpand() {
 		return get("F_AllowExpand");
 	}
 
-	public void setFIspublic(String fIspublic) {
+	public void setFIspublic(java.lang.String fIspublic) {
 		set("F_IsPublic", fIspublic);
 	}
 
-	public String getFIspublic() {
+	public java.lang.String getFIspublic() {
 		return get("F_IsPublic");
 	}
 
-	public void setFAllowedit(String fAllowedit) {
+	public void setFAllowedit(java.lang.String fAllowedit) {
 		set("F_AllowEdit", fAllowedit);
 	}
 
-	public String getFAllowedit() {
+	public java.lang.String getFAllowedit() {
 		return get("F_AllowEdit");
 	}
 
-	public void setFAllowdelete(String fAllowdelete) {
+	public void setFAllowdelete(java.lang.String fAllowdelete) {
 		set("F_AllowDelete", fAllowdelete);
 	}
 
-	public String getFAllowdelete() {
+	public java.lang.String getFAllowdelete() {
 		return get("F_AllowDelete");
 	}
 
-	public void setFSortcode(String fSortcode) {
+	public void setFSortcode(java.lang.String fSortcode) {
 		set("F_SortCode", fSortcode);
 	}
 
-	public String getFSortcode() {
+	public java.lang.String getFSortcode() {
 		return get("F_SortCode");
 	}
 
-	public void setFDeletemark(String fDeletemark) {
+	public void setFDeletemark(java.lang.String fDeletemark) {
 		set("F_DeleteMark", fDeletemark);
 	}
 
-	public String getFDeletemark() {
+	public java.lang.String getFDeletemark() {
 		return get("F_DeleteMark");
 	}
 
-	public void setFEnabledmark(String fEnabledmark) {
+	public void setFEnabledmark(java.lang.String fEnabledmark) {
 		set("F_EnabledMark", fEnabledmark);
 	}
 
-	public String getFEnabledmark() {
+	public java.lang.String getFEnabledmark() {
 		return get("F_EnabledMark");
 	}
 
-	public void setFDescription(String fDescription) {
+	public void setFDescription(java.lang.String fDescription) {
 		set("F_Description", fDescription);
 	}
 
-	public String getFDescription() {
+	public java.lang.String getFDescription() {
 		return get("F_Description");
 	}
 
@@ -145,19 +145,19 @@ public abstract class BaseMenu<M extends BaseMenu<M>> extends Model<M> implement
 		return get("F_CreateDate");
 	}
 
-	public void setFCreateuserid(Integer fCreateuserid) {
+	public void setFCreateuserid(java.lang.Integer fCreateuserid) {
 		set("F_CreateUserId", fCreateuserid);
 	}
 
-	public Integer getFCreateuserid() {
+	public java.lang.Integer getFCreateuserid() {
 		return get("F_CreateUserId");
 	}
 
-	public void setFCreateusername(String fCreateusername) {
+	public void setFCreateusername(java.lang.String fCreateusername) {
 		set("F_CreateUserName", fCreateusername);
 	}
 
-	public String getFCreateusername() {
+	public java.lang.String getFCreateusername() {
 		return get("F_CreateUserName");
 	}
 
@@ -169,20 +169,28 @@ public abstract class BaseMenu<M extends BaseMenu<M>> extends Model<M> implement
 		return get("F_ModifyDate");
 	}
 
-	public void setFModifyuserid(Integer fModifyuserid) {
+	public void setFModifyuserid(java.lang.Integer fModifyuserid) {
 		set("F_ModifyUserId", fModifyuserid);
 	}
 
-	public Integer getFModifyuserid() {
+	public java.lang.Integer getFModifyuserid() {
 		return get("F_ModifyUserId");
 	}
 
-	public void setFModifyusername(String fModifyusername) {
+	public void setFModifyusername(java.lang.String fModifyusername) {
 		set("F_ModifyUserName", fModifyusername);
 	}
 
-	public String getFModifyusername() {
+	public java.lang.String getFModifyusername() {
 		return get("F_ModifyUserName");
+	}
+
+	public void setFTest(java.lang.String fTest) {
+		set("F_Test", fTest);
+	}
+
+	public java.lang.String getFTest() {
+		return get("F_Test");
 	}
 
 }
